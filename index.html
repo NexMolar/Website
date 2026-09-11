@@ -7,18 +7,13 @@
 <meta name="description" content="Appointments, patients, billing and WhatsApp reminders in one place. NexMolar is built for Indian dental clinics." />
 
 <!-- ============================================================
-  LOGO: replace the <span class="brand-mark"></span> mark in the
-  header (search "brand-mark" below) with:
-    <img src="/logo.png" alt="NexMolar" class="brand-mark-img" />
-  Drop your logo file at the site root as logo.png (SVG works the
-  same way — just point the src at logo.svg instead). There's a
-  matching .brand-mark-img rule already written (currently commented
-  out) in the <style> block below — uncomment it once you swap the tag.
-
-  FAVICON: replace the href below with wherever you host your
-  favicon file.
+  LOGO / FAVICON: this file expects two images alongside it in the
+  same folder — nexmolar-logo.png (the wordmark) and
+  nexmolar-favicon.png (the tooth mark, square). If you host them
+  somewhere else, update the two paths below and the <img src>
+  further down (search "brand-logo").
 ============================================================= -->
-<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="icon" type="image/png" href="nexmolar-favicon.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,13 +50,8 @@
     border-bottom: 1px solid var(--line);
   }
   .nav { display: flex; align-items: center; justify-content: space-between; height: 82px; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 21px; letter-spacing: -0.02em; color: var(--navy); }
-  .brand-mark {
-    width: 32px; height: 32px; border-radius: 9px;
-    background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
-    display: inline-block;
-  }
-  /* .brand-mark-img { width: 32px; height: 32px; object-fit: contain; } */
+  .brand { display: flex; align-items: center; }
+  .brand-logo { height: 32px; width: auto; display: block; }
   .nav-links { display: flex; align-items: center; gap: 34px; font-size: 15px; font-weight: 500; color: var(--muted); }
   .nav-links a:hover { color: var(--navy); }
   .btn {
@@ -224,7 +214,7 @@
 
 <header>
   <div class="wrap nav">
-    <div class="brand"><span class="brand-mark"></span>NexMolar</div>
+    <a href="/" class="brand"><img src="nexmolar-logo.png" alt="NexMolar" class="brand-logo" /></a>
     <nav class="nav-links">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
