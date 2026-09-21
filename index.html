@@ -191,6 +191,25 @@
   .cta h2 { max-width: 560px; margin: 0 auto 16px; }
   .cta p { color: var(--muted); font-size: 17px; margin-bottom: 34px; }
 
+  /* Download */
+  .download { text-align: center; padding: 96px 0; background: var(--sky-tint); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .download h2 { max-width: 560px; margin: 0 auto 16px; }
+  .download p { color: var(--muted); font-size: 17px; margin-bottom: 40px; }
+  .download-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  .dl-btn {
+    display: inline-flex; align-items: center; gap: 14px;
+    background: #fff; border: 1.5px solid var(--line); border-radius: 16px;
+    padding: 14px 26px; min-width: 240px; text-align: left;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .dl-btn:hover { border-color: var(--navy); transform: translateY(-2px); box-shadow: 0 12px 24px -14px rgba(11,31,58,0.35); }
+  .dl-btn svg { width: 30px; height: 30px; flex-shrink: 0; color: var(--navy); }
+  .dl-btn .dl-eyebrow { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .dl-btn .dl-label { font-size: 16px; font-weight: 700; color: var(--navy); }
+  @media (max-width: 480px) {
+    .dl-btn { min-width: 0; width: 100%; }
+  }
+
   /* Footer */
   footer { border-top: 1px solid var(--line); padding: 40px 0; }
   .foot-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
@@ -219,6 +238,7 @@
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
+      <a href="#download">Download</a>
     </nav>
     <div style="display:flex; gap:10px; align-items:center;">
       <a href="https://app.nexmolar.in/login" class="btn btn-ghost">Sign in</a>
@@ -368,6 +388,33 @@
     <h2>Try it free — see if it fits your clinic first.</h2>
     <p>No setup fee, no card required. Bring your team in when you're ready.</p>
     <a href="https://app.nexmolar.in/signup" class="btn btn-primary btn-large">Start your free trial</a>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <h2>Also available as a desktop app.</h2>
+    <p>Run NexMolar in its own window on Windows or Mac — no browser tab required.</p>
+    <div class="download-grid">
+      <a href="/downloads/NexMolar-Setup.exe" class="dl-btn">
+        <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
+          <path d="M0 74.6l208.9-28.4v201.7H0V74.6zM231.1 42.6L512 0v242.9H231.1V42.6zM0 269.9h208.9V472L0 443.4V269.9zM231.1 269.9H512V512l-280.9-42.6V269.9z"/>
+        </svg>
+        <span>
+          <span class="dl-eyebrow">Download for</span><br>
+          <span class="dl-label">Windows</span>
+        </span>
+      </a>
+      <a href="/downloads/NexMolar.dmg" class="dl-btn">
+        <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 0 184.8 0 273.5c0 25.9 4.7 52.7 14.2 80.2 12.6 36.7 58.3 126.7 105.9 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48 0 89.3-82.1 101.3-118.9-64.4-30.3-55-88.9-54.9-91.3zM256.4 84.6c26.9-32 24.5-61.1 23.7-71.6-23.8 1.4-51.3 16.3-67.2 34.7-17.5 19.5-27.8 43.7-25.6 70.8 25.5 2 48.7-11.1 69.1-33.9z"/>
+        </svg>
+        <span>
+          <span class="dl-eyebrow">Download for</span><br>
+          <span class="dl-label">macOS</span>
+        </span>
+      </a>
+    </div>
   </div>
 </section>
 
