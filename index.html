@@ -216,6 +216,9 @@
   .foot-brand { font-weight: 800; font-size: 16px; color: var(--navy); }
   .foot-links { display: flex; gap: 24px; font-size: 14px; color: var(--muted); }
   .foot-links a:hover { color: var(--navy); }
+  .foot-legal { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 10px; }
+  .foot-legal a { color: var(--muted); }
+  .foot-legal a:hover { color: var(--navy); }
 
   @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
@@ -419,14 +422,26 @@
 </section>
 
 <footer>
-  <div class="wrap foot-row">
-    <div class="foot-brand">NexMolar</div>
-    <div class="foot-links">
-      <a href="https://app.nexmolar.in/login">Sign in</a>
-      <a href="https://app.nexmolar.in/demo">Book a Demo</a>
-      <a href="mailto:support@nexmolar.in">Contact</a>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-brand">NexMolar</div>
+      <div class="foot-links">
+        <a href="https://app.nexmolar.in/login">Sign in</a>
+        <a href="https://app.nexmolar.in/demo">Book a Demo</a>
+        <a href="mailto:support@nexmolar.in">Contact</a>
+      </div>
+      <div style="font-size:13px; color: var(--muted);">A product by MadeBase</div>
     </div>
-    <div style="font-size:13px; color: var(--muted);">A product by MadeBase</div>
+    <!-- Legal/KYC contact details — required by payment-gateway KYC
+         verification to appear on the website. Update here if the
+         legal name, email or phone on file ever changes. -->
+    <div class="foot-legal">
+      <span>Owned and operated by Selvakumar Hari Krishna</span>
+      <span>·</span>
+      <a href="mailto:founder@nexmolar.in">founder@nexmolar.in</a>
+      <span>·</span>
+      <a href="tel:+918921195466">+91 89211 95466</a>
+    </div>
   </div>
 </footer>
 
